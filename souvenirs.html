@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11100f" />
+    <meta name="description" content="Les souvenirs de la famille et le Clasico de Papa Papy." />
+    <title>Les souvenirs — Papa Papy</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-souvenirs" data-page="souvenirs">
+    <a class="skip-link" href="#souvenirs-main">Aller au contenu</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="story-header">
+      <a class="wordmark" href="index.html" aria-label="Revenir au début de l'histoire">P / P <span>12.08</span></a>
+      <p class="header-caption">Les souvenirs qui restent</p>
+      <div class="header-progress"><span></span></div>
+    </header>
+
+    <main id="souvenirs-main" class="souvenirs-main">
+      <section class="souvenir-scene scene is-active" id="memory-scene" aria-labelledby="memory-title">
+        <div class="memory-intro">
+          <p class="eyebrow">Chapitre 03 <span class="eyebrow-rule"></span> les images parlent aussi</p>
+          <h1 id="memory-title">Et puis il y a<br /><em>tous ces moments</em></h1>
+          <p>que les mots ne peuvent pas raconter.</p>
+        </div>
+        <div class="photo-deck" id="memory-deck" aria-label="Galerie de souvenirs" aria-live="polite"></div>
+        <div class="deck-meta"><span id="memory-count">01 / 08</span><span class="deck-dash"></span><span>souvenirs de famille</span></div>
+        <div class="deck-controls">
+          <button class="icon-button" id="memory-prev" type="button" aria-label="Souvenir précédent"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M28 18H8M15 10l-8 8 8 8" /></svg></button>
+          <button class="icon-button" id="memory-next" type="button" aria-label="Souvenir suivant"><svg viewBox="0 0 36 36" aria-hidden="true"><path d="M8 18h20M21 10l8 8-8 8" /></svg></button>
+        </div>
+        <a class="story-button memory-next-scene" id="memory-continue" href="football.html"><span class="button-label">Suivant</span><svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16h19M17 8l8 8-8 8" /></svg></a>
+      </section>
+    </main>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

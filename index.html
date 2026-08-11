@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#11100f" />
+    <meta name="description" content="Une histoire de famille pour Papa Papy Modeste Mayala." />
+    <title>Papa Papy — Une histoire de famille</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-opening" data-page="opening">
+    <a class="skip-link" href="#story-content">Aller au contenu</a>
+    <div class="grain" aria-hidden="true"></div>
+    <div class="scene-counter" aria-hidden="true"><span>00</span><i></i><span>05</span></div>
+
+    <main id="story-content" class="opening-shell">
+      <section class="scene opening-scene is-active" id="open-scene" aria-labelledby="opening-title">
+        <div class="opening-orbit opening-orbit-one" aria-hidden="true"></div>
+        <div class="opening-orbit opening-orbit-two" aria-hidden="true"></div>
+        <p class="eyebrow opening-eyebrow">Une histoire écrite à plusieurs voix</p>
+        <div class="opening-lockup">
+          <p class="opening-kicker">Pour une personne qui a changé notre histoire</p>
+          <h1 id="opening-title">Ouvre<br /><em>Papa</em></h1>
+          <p class="opening-date">12 <span>/</span> 08</p>
+        </div>
+        <button class="story-button opening-button" id="open-story" type="button" aria-controls="video-scene">
+          <span class="button-line" aria-hidden="true"></span>
+          <span class="button-label">Ouvre Papa</span>
+          <svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M5 16h19M17 8l8 8-8 8" />
+          </svg>
+        </button>
+        <p class="opening-note">Une création de ta famille</p>
+      </section>
+
+      <section class="scene video-scene" id="video-scene" aria-labelledby="video-title" hidden>
+        <div class="video-frame">
+          <div class="video-placeholder media-placeholder" aria-hidden="true">
+            <span class="placeholder-mark">00</span>
+            <span>La vidéo apparaîtra ici</span>
+          </div>
+          <video id="intro-video" class="intro-video" playsinline preload="metadata" aria-label="Vidéo d'introduction pour Papa Papy">
+            <source src="img/intro.mp4" type="video/mp4" />
+          </video>
+          <div class="video-vignette" aria-hidden="true"></div>
+          <div class="video-caption" id="video-title">
+            <span>Chapitre 01</span>
+            <strong>Pour toi, Papa Papy</strong>
+          </div>
+        </div>
+        <button class="story-button video-next" id="video-next" type="button" aria-controls="welcome-scene">
+          <span class="button-label">Suivant</span>
+          <svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M5 16h19M17 8l8 8-8 8" />
+          </svg>
+        </button>
+        <p class="video-status" role="status">La lecture commence maintenant.</p>
+      </section>
+
+      <section class="scene welcome-scene" id="welcome-scene" aria-labelledby="welcome-title" hidden>
+        <div class="welcome-sun" aria-hidden="true"></div>
+        <span class="background-number" aria-hidden="true">12</span>
+        <div class="welcome-content">
+          <div class="welcome-copy">
+            <p class="eyebrow reveal-item">12 AOÛT <span class="eyebrow-rule"></span> une date à garder</p>
+            <h2 id="welcome-title" class="welcome-title reveal-item">Papa Papy<br /><em>Modeste Mayala</em></h2>
+            <p class="welcome-lede reveal-item">Aujourd'hui, nous ne célébrons pas seulement un anniversaire. Nous célébrons la place que tu as choisie de prendre dans notre histoire.</p>
+            <div class="welcome-signature reveal-item">
+              <span class="signature-line"></span>
+              <span>Une seule famille, quatre voix</span>
+            </div>
+          </div>
+          <figure class="welcome-image reveal-item">
+            <img src="img/leon.webp" alt="Leon" />
+          </figure>
+        </div>
+        <button class="story-button scene-continue reveal-item" id="welcome-next" type="button">
+          <span class="button-label">Continuer</span>
+          <svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true">
+            <path d="M5 16h19M17 8l8 8-8 8" />
+          </svg>
+        </button>
+        <p class="welcome-by-signature" aria-hidden="true">By : Ephraim, Gabriella, Brayan et Christelvie</p>
+      </section>
+    </main>
+
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

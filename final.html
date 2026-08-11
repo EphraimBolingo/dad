@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#1b1110" />
+    <meta name="description" content="Le grand final de l'histoire de famille pour Papa Papy Modeste Mayala." />
+    <title>Pour toujours une seule famille — Papa Papy</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-final" data-page="final">
+    <a class="skip-link" href="#final-main">Aller au contenu</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="story-header final-header">
+      <a class="wordmark" href="index.html" aria-label="Revenir au début de l'histoire">P / P <span>12.08</span></a>
+      <p class="header-caption">Le grand final</p>
+      <button class="sound-toggle" id="sound-toggle" type="button" aria-label="Couper le son" aria-pressed="false">
+        <svg class="sound-on" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 16h6l8-7v22l-8-7H8zM27 15c3 3 3 7 0 10M31 11c5 5 5 13 0 18" /></svg>
+        <svg class="sound-off" viewBox="0 0 40 40" aria-hidden="true"><path d="M8 16h6l8-7v22l-8-7H8zM28 14l8 12M36 14l-8 12" /></svg>
+      </button>
+    </header>
+
+    <main id="final-main" class="final-main">
+      <section class="final-gallery" aria-label="Photographies de famille">
+        <div class="final-deck" id="final-deck"></div>
+        <div class="final-gallery-wash" aria-hidden="true"></div>
+        <p class="final-gallery-label">Encore des pages à écrire <span></span> 12.08</p>
+      </section>
+
+      <section class="final-message" aria-labelledby="final-title">
+        <div class="final-aurora" aria-hidden="true"></div>
+        <div class="final-heading">
+          <p class="eyebrow final-eyebrow">La dernière page n'est pas une fin <span class="eyebrow-rule"></span></p>
+          <h1 id="final-title" class="final-title">Papa Papy</h1>
+          <p class="final-intro">Pour tout ce que nous sommes devenus ensemble.</p>
+        </div>
+        <div class="heart-stage" aria-hidden="true">
+          <svg class="final-heart" viewBox="0 0 300 270" role="presentation">
+            <defs><radialGradient id="heart-glow" cx="50%" cy="42%" r="58%"><stop offset="0" stop-color="#e7b6a1" stop-opacity=".9" /><stop offset=".42" stop-color="#a74635" stop-opacity=".8" /><stop offset="1" stop-color="#5e201c" stop-opacity=".25" /></radialGradient></defs>
+            <path class="heart-shadow" d="M150 245C128 220 41 171 41 91 41 51 68 29 101 29c22 0 39 11 49 30 10-19 27-30 49-30 33 0 60 22 60 62 0 80-87 129-109 154Z" />
+            <path class="heart-fill" d="M150 245C128 220 41 171 41 91 41 51 68 29 101 29c22 0 39 11 49 30 10-19 27-30 49-30 33 0 60 22 60 62 0 80-87 129-109 154Z" />
+            <path class="heart-outline" d="M150 245C128 220 41 171 41 91 41 51 68 29 101 29c22 0 39 11 49 30 10-19 27-30 49-30 33 0 60 22 60 62 0 80-87 129-109 154Z" />
+            <path class="heart-glint" d="M83 74c10-13 24-18 37-17" />
+          </svg>
+          <span class="heart-pulse" aria-hidden="true"></span>
+        </div>
+        <div class="final-copy" id="final-copy" aria-live="polite"></div>
+        <a class="story-button replay-button" href="index.html"><span class="button-label">Revoir l'histoire</span><svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16h19M17 8l8 8-8 8" /></svg></a>
+      </section>
+    </main>
+    <audio id="final-music" preload="auto" loop aria-label="Joyeux anniversaire"><source src="img/aniv.mpeg" type="audio/mpeg" /></audio>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

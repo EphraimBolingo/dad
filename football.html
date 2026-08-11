@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0d1719" />
+    <meta name="description" content="Le Clasico familial de Papa Papy, entre Real Madrid et Barça." />
+    <title>Le Clasico familial — Papa Papy</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="page-football" data-page="football">
+    <a class="skip-link" href="#football-main">Aller au contenu</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="story-header">
+      <a class="wordmark" href="index.html" aria-label="Revenir au début de l'histoire">P / P <span>12.08</span></a>
+      <p class="header-caption">Le Clasico familial</p>
+      <div class="header-progress"><span style="width: 80%"></span></div>
+    </header>
+
+    <main id="football-main" class="football-main">
+      <section class="match-scene scene is-active" aria-labelledby="match-title">
+        <div class="pitch-grid" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div class="match-topline"><span>Interlude 01</span><span>Le débat continue</span><span>90:00</span></div>
+        <div class="match-content">
+          <p class="eyebrow">Une rivalité affectueuse <span class="eyebrow-rule"></span> le Clasico familial</p>
+          <h1 id="match-title">Papa, il y a quand même<br /><em>une chose</em> sur laquelle nous n'arrivons toujours pas à nous mettre d'accord…</h1>
+          <div class="match-columns">
+            <div class="player-photo player-photo-left" aria-label="Vinicius">
+              <img src="img/vini.webp" alt="Vinicius" />
+            </div>
+            <div class="club-mark madrid-mark" aria-label="Une interprétation graphique originale du Real Madrid">
+              <img src="img/real.webp" alt="Logo Real Madrid" />
+              <b>REAL</b>
+            </div>
+            <div class="match-copy">
+              <p>Toi, tu as choisi le Real Madrid… et nous, une bonne partie d'entre nous a choisi le Barça !</p>
+              <p>Mais finalement, ce n'est pas grave… parce qu'on veut encore vivre avec toi beaucoup de Clasicos, beaucoup de débats, beaucoup de chambrages et surtout beaucoup de souvenirs.</p>
+              <p>Alors aujourd'hui, exceptionnellement…</p>
+              <p class="hala">HALA MADRID !</p>
+              <p>Profite bien de cette victoire… parce que c'est ta seule victoire du classico cette saison !</p>
+              <p>Papa Papy, on t'aime… même si tu supportes le Real.</p>
+            </div>
+            <div class="club-mark barca-mark" aria-label="Une interprétation graphique originale du FC Barcelone">
+              <img src="img/barca.webp" alt="Logo FC Barcelone" />
+              <b>BARÇA</b>
+            </div>
+            <div class="player-photo player-photo-right" aria-label="Lamine Yamal">
+              <img src="img/lamine.webp" alt="Lamine Yamal" />
+            </div>
+          </div>
+        </div>
+        <a class="story-button match-next" id="match-continue" href="final.html"><span class="button-label">Suivant</span><svg class="button-arrow" viewBox="0 0 32 32" aria-hidden="true"><path d="M5 16h19M17 8l8 8-8 8" /></svg></a>
+      </section>
+    </main>
+    <audio id="madrid" preload="auto" src="img/madrid.mp3" aria-hidden="true"></audio>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const audio = document.getElementById("madrid");
+        if (!audio) return;
+        audio.volume = 1;
+        const playPromise = audio.play();
+        if (playPromise && typeof playPromise.catch === "function") {
+          playPromise.catch(() => {
+            // Autoplay may be blocked, but the audio source is ready.
+          });
+        }
+      });
+    </script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>
