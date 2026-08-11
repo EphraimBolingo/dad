@@ -347,6 +347,20 @@
     });
 
     renderMessage(0, true);
+    // Keyboard navigation: flèches droite/gauche pour avancer/reculer
+    const onKeydown = (event) => {
+      if (event.defaultPrevented) return;
+      const active = document.activeElement;
+      if (active && (active.tagName === 'INPUT' || active.tagName === 'TEXTAREA' || active.isContentEditable)) return;
+      if (event.key === 'ArrowRight') {
+        if (currentIndex === messages.length - 1) goTo('souvenirs.html');
+        else changeMessage(currentIndex + 1);
+      } else if (event.key === 'ArrowLeft') {
+        if (currentIndex === 0) goTo('index.html');
+        else changeMessage(currentIndex - 1);
+      }
+    };
+    document.addEventListener('keydown', onKeydown);
   }
 
   const memoryPhotos = Array.from({ length: 8 }, (_, index) => ({
