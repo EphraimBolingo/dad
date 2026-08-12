@@ -215,7 +215,7 @@
       name: "Divine",
       note: "Un message sincère depuis le cœur",
       portrait: "img/divine.webp",
-      message: "Joyeux anniversaire, Papa ! En ce jour spécial, je veux te dire merci pour ta patience, ta générosité et tous les petits gestes qui rendent nos vies plus belles. Ta présence est un refuge et un exemple — grâce à toi, j'apprends chaque jour le sens du courage et de l'amour. Que Dieu te garde en bonne santé et t'offre encore de nombreuses années de bonheur. Je t'aime plus que les mots ne peuvent l'exprimer. ❤️"
+      message: "En ce jour précieux, je vous souhaite felix dies natalis,\nQue la vie vous accorde bonheur, paix et délices.\nGratias tibi ago pour tout ce que vous êtes\nPapa, que Deus vous benedicat aujourd’hui et à jamais.\nJoyeux anniversaire, Papa. Ad multos annos ! ❤️"
     },
     {
       name: "Mapitshi",
